@@ -28,6 +28,27 @@
   cursor: pointer;
 }
 
+/* 🔥 HEADER FIX (OUTSIDE MEDIA QUERY) */
+.header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.profile-img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ff4d8d;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
 .card {
   background: #f9f9f9;
   padding: 15px;
@@ -56,25 +77,5 @@
 
   .button {
     width: 100%;
-  }
-
-  .header {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    margin-bottom: 20px;
-  }
-
-  .profile-img {
-    width: 55px;
-    height: 55px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid #ff4d8d;
-  }
-
-  .name {
-    font-size: 20px;
-    font-weight: bold;
   }
 }
