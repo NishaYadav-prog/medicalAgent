@@ -1,6 +1,8 @@
 import { useState } from "react";
 import axios from "axios";
+import profile from "./assets/nishayadav.jpeg";
 import "./App.css";
+
 function App() {
   const [disease, setDisease] = useState("");
   const [query, setQuery] = useState("");
@@ -25,8 +27,16 @@ function App() {
 
   return (
     <div className="container">
+      {/* 🔥 HEADER */}
+      <div className="header">
+        <img src={profile} alt="profile" className="profile-img" />
+        <h2 className="name">Nisha Yadav</h2>
+      </div>
+
+      {/* TITLE */}
       <h1 className="title">🧠 Curalink AI Assistant</h1>
 
+      {/* INPUT SECTION */}
       <div className="input-group">
         <input
           className="input"
@@ -49,6 +59,7 @@ function App() {
         </button>
       </div>
 
+      {/* RESPONSE */}
       {response && (
         <>
           <div className="card">
@@ -80,4 +91,5 @@ function App() {
     </div>
   );
 }
+
 export default App;
