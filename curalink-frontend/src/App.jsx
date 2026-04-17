@@ -8,10 +8,13 @@ function App() {
 
   const handleSearch = async () => {
     try {
-      const res = await axios.post("http://localhost:5000/api/research", {
-        disease,
-        query,
-      });
+      const res = await axios.post(
+        `${import.meta.env.VITE_API_URL}/api/research`,
+        {
+          disease,
+          query,
+        },
+      );
 
       setResponse(res.data);
     } catch (error) {
